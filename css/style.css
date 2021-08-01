@@ -662,7 +662,8 @@ nav {
     max-width: 100%;
 }
 nav ul li a {
-    font-size: 12px;
+    font-size: 15px;
+	padding: 0px 15px;
 }
 .logo a img {
     width: 40%;

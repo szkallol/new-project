@@ -13,6 +13,26 @@
 
 </head>
 <body>
+	
+	
+	<div class="curser"></div>
+<div class="curser-lazy"></div>
+<script class="curser">
+	"use strict";
+	(function (){
+		var curser = document.querySelector('.curser');
+		var curserlazy = document.querySelector('.curser-lazy');
+		var links = document.querySelectorAll('a');
+		var editCurser = function editCurser(event){
+			curser.style.left = event.clientX +'px';
+			curser.style.top = event.clientY +'px';
+			curserlazy.style.left = event.clientX +'px';
+			curserlazy.style.top = event.clientY +'px';
+		        }
+        window.addEventListener('mousemove', editCurser);
+
+	})();
+</script>
 
 	
 	<!----Header start---->
